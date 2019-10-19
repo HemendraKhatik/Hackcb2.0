@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login  | System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom Stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/particle_back.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+</head>
+<body>
+	<div class="form-structor" >
+		<div class="signup">
+			<h2 class="form-title" id="signup"><span>or</span>Log In</h2>
+			<form action="/login" method="post">
+				<div class="form-holder">
+					<!-- <input type="text" class="input" placeholder="Name" /> -->
+					<input type="email" name="email" class="input" placeholder="Email" />
+					<input type="password" name="password" class="input" placeholder="Password" />
+				</div>
+				<button class="submit-btn">Log In</button>
+				<p class="text-center text-white">Don't have an account create <a href="/signup">here</a>.</p>
+			</form>
+		</div>
+	</div>
+
+	<div class="purple division"></div>
+	<div class="medium-blue division"></div>
+	<div class="light-blue division"></div>
+	<div class="red division"></div>
+	<div class="orange division"></div>
+	<div class="yellow division"></div>
+	<div class="cyan division"></div>
+	<div class="light-green division"></div>
+	<div class="lime division"></div>
+	<div class="magenta division"></div>
+	<div class="lightish-red division"></div>
+	<div class="pink division"></div>
+</body>
+</html>
