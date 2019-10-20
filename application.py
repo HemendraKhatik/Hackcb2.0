@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 app = Flask(__name__)
-DATABASE_URL="postgres://wlaxxoqfdmuoxx:60b3846db4ce73d5595e5510808f20788865242be016bc20a34ebcacc4dab6fd@ec2-54-235-104-136.compute-1.amazonaws.com:5432/denacruri026b6"
+# DATABASE_URL="postgres://wlaxxoqfdmuoxx:60b3846db4ce73d5595e5510808f20788865242be016bc20a34ebcacc4dab6fd@ec2-54-235-104-136.compute-1.amazonaws.com:5432/denacruri026b6"
 
 # Check for environment variable
 if not os.getenv("DATABASE_URL"):
@@ -22,14 +22,18 @@ db = scoped_session(sessionmaker(bind=engine))
 
 @app.route("/")
 def index():
-	return render_template("signup.html")
+	return render_template("landing.html")
+
+@app.route("/home")
+def home():
+	return render_template("home.html")
 
 @app.route("/html")
 def html():
-	return render_template("details.html")
+	return render_template("html.html")
 
 @app.route("/github")
-def details():
+def github():
 	return render_template("github.html")
 	
 @app.route("/signup",methods=["POST","GET"])
@@ -52,7 +56,6 @@ def signup():
 	{"email":email,"password":password})
 	db.commit()
 	db.close()
-	flash("Your account is created!")
 	return render_template("login.html")
 
 @app.route("/login",methods=["POST","GET"])
@@ -69,9 +72,9 @@ def login():
 	flash("Invalid email or password!")
 	return redirect(request.url)				
 
-@app.route("/logout",methods=["GET"])
+@app.route("/logout")
 def logout():
-	return render_template("index.html")
+	return render_template("login.html")
 
 if __name__ == "__main__":
     app.run(debug=True)	

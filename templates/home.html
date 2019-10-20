@@ -10,26 +10,33 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/shravan.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>HackCBS 2.O</title>
   <style type="text/css">
     .bg {
-      background-color: #17A2BB;
+      background-color: #85929E ;
     }
+    .box-part:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+  }
+  .whiteclr{
+    color: white;
+  }
   </style>
 </head>
 
 <body>
   <div>
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg sticky-top">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-light bg sticky-top whiteclr">
+      <a class="navbar-brand" href="/home">
         <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
           alt="">
-        Logo
+        NewEra
       </a>
+      <a class="float-right" href="/logout">logout</a>
     </nav>
-
-
     <div class="box">
       <div class="container" style="margin-top: -40px;">
         <div class="row">
@@ -37,7 +44,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="box-part text-center">
-                  <img src="{{ url_for('static', filename='images/markdown.png') }}">
+                  <img src="{{ url_for('static', filename='images/github.jpg') }}">
                   <div class="title">
                     <h4>GitHub</h4>
                   </div>
@@ -213,8 +220,8 @@
           </div>
           <div class="col-md-3">
             <div class="box-part-right">
-              <h3 style="text-align: center;">Your Course</h3>
-              <button type="button" class="btn btn-lg">HTML</button> <br>
+              <h3 style="text-align: center;">Your Stats</h3>
+              <button type="button" class="btn btn-lg">HTML</button><br>
               <button type="button" class="btn btn-lg">CSS</button><br>
               <button type="button" class="btn btn-lg">JQuery</button><br>
               <button type="button" class="btn btn-lg">Javascript</button><br>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <title>HackCBS 2.O</title>
+    <style type="text/css">
+    .bg{
+        background-color: #85929E;
+      }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleDetails.css') }}">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+     <div>
+      <div class="">
+          <!-- Image and text -->
+          <nav class="navbar navbar-light bg sticky-top">
+            <a class="navbar-brand" href="/home">
+         <h2 style="color: #fff; font-family: sans-serif;">NewEra</h2>
+
+            </a>
+          </nav>
+
+
+   <div id="wrapper">
+
+        <!-- Sidebar -->
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#1">1. What is HTML? </a>
+                </li>
+                <li>
+                    <a href="#2">2. Say Hello Elements</a>
+                </li>
+                <li>
+                    <a href="#3">3. Headline with h elements</a>
+                </li>
+                <li>
+                    <a href="#4">4. Uncomment HTML</a>
+                </li>
+                <li>
+                    <a href="#5">5. Add Image in HTML</a>
+                </li> 
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Topics</a>
+                
+                                              
+
+
+<!---What is html start --->                                        
+                       <div class="box-part" id="1">
+                          <h3>What is HTML?</h3>
+                          <p>
+                            Welcome to the world of code! Last year, millions of learners from our community started with HTML. Why? HTML is the skeleton of all web pages. It’s often the first language learned by marketers and designers and is core to front-end development work. If this is your first time touching code, we’re excited for what you’re about to create.
+                          </p>
+                          <p>
+                            So what exactly is HTML? HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on any page on the internet, choose “Inspect,” and you’ll see HTML in a panel of your screen.
+                          </p>
+<!---codepen start --->
+
+              <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="manjeet_123" data-slug-hash="jOOVwao" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="jOOVwao">
+                  <span>See the Pen <a href="https://codepen.io/manjeet_123/pen/jOOVwao">
+                  jOOVwao</a> by Manjeet Kumar (<a href="https://codepen.io/manjeet_123">@manjeet_123</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<!---codepen End --->
+
+<!---first quiz start --->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;">
+    Take Quiz
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">What does markup language use to identify content?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <h5>commands</h5>
+        <h5>tags</h5>
+        <h5>functions</h5>
+        <h5>scripts</h5>
+
+
+
+        <input type="text" id="ans">
+        <button style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" onclick="answer1()">Submit!</button>
+
+         <script src="{{ url_for('static', filename='js/html.js') }}"></script>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---first quiz end --->
+
+
+</div>
+<!---What is html End --->                                   
+
+<!---Hello to HTML Elements start --->                                        
+                       <div class="box-part" id="2">
+                          <h3>Hello to HTML Elements</h3>
+                          <p>First, you'll start by building a simple web page using HTML. You can edit code in your code editor, which is embedded into this web page.
+                          </p>
+                          <p>Do you see the code in your code editor that says Hello? That's an HTML element.
+                          </p>
+
+<!---Codepen start -->
+                          <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="manjeet_123" data-slug-hash="qBBqjom" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="qBBqjom">
+                          <span>See the Pen <a href="https://codepen.io/manjeet_123/pen/qBBqjom">
+                          qBBqjom</a> by Manjeet Kumar (<a href="https://codepen.io/manjeet_123">@manjeet_123</a>)
+                          on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<!---Codepen end -->
+<!---first quiz start --->
+
+  
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;">
+    Take Quiz
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">What is the corect extension fot HTML files?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <h5>.exe</h5>
+        <h5>.css</h5>
+        <h5>.txt</h5>
+        <h5>.html</h5>
+
+        <input type="text" id="ans">
+        <button style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" onclick="answer()">Submit!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!--Hello to HTML Elements End --->                                                  
+
+<!---Headline with h elements start --->                                        
+                       <div class="box-part" id="3"> 
+                          <h3>Headline with h elements</h3>
+                          <p>The h2 element you will be adding in this step will add a level two heading to the web page.
+                          </p>
+                          <p>
+                              This element tells the browser about the structure of your website. h1 elements are often used for main headings, while h2 elements are generally used for subheadings. There are also h3, h4, h5 and h6 elements to indicate different levels of subheadings.
+                          </p>
+
+<!--codepen start -->
+                          <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="manjeet_123" data-slug-hash="WNNoOJW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="WNNoOJW">
+                            <span>See the Pen <a href="https://codepen.io/manjeet_123/pen/WNNoOJW">
+                            WNNoOJW</a> by Manjeet Kumar (<a href="https://codepen.io/manjeet_123">@manjeet_123</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<!--codepen end -->
+                          <button type="button" class="btn" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" >Take Quiz</button>
+                        </div>
+<!---Headline with h elements End --->                                                  
+
+                       
+
+<!--Uncomment HTML start --->                                        
+                       <div class="box-part" id="4">
+                          <h3>Uncomment HTML</h3>
+                          <p>Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.
+                          </p>
+                          <p>
+                              Commenting is also a convenient way to make code inactive without having to delete it entirely.
+                          </p>
+                          <p>
+                            Comments in HTML start with <!-- and end with a -->
+                          </p>
+
+<!--codepen start -->
+                  <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="manjeet_123" data-slug-hash="NWWbgZQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NWWbgZQ">
+                  <span>See the Pen <a href="https://codepen.io/manjeet_123/pen/NWWbgZQ">
+                  NWWbgZQ</a> by Manjeet Kumar (<a href="https://codepen.io/manjeet_123">@manjeet_123</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<!--codepen end -->                        
+
+
+                          <button type="button" class="btn" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" >Take Quiz</button>
+                        </div>                       
+<!--Uncomment HTML End --->                                                  
+
+                  
+<!--Add Images to Your Website start --->                                        
+                       <div class="box-part" id="5">
+                          <h3>Add Images in HTML</h3>
+                          <p>You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.
+                          </p>
+                          <p>
+                          An example of this would be:
+
+                            <br/ >src="https://www.your-image-source.com/your-image.jpg" <br> using img tag
+
+                        Note that img elements are self-closing.
+                          </p>
+                          <p>
+                            All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.
+                          </p>
+
+<!--codepen start -->                          
+                          <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="manjeet_123" data-slug-hash="bGGBRjZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="bGGBRjZ">
+                          <span>See the Pen <a href="https://codepen.io/manjeet_123/pen/bGGBRjZ">
+                          bGGBRjZ</a> by Manjeet Kumar (<a href="https://codepen.io/manjeet_123">@manjeet_123</a>)
+                          on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<!--codepen end -->
+                          <button type="button" class="btn" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" >Take Quiz</button>
+                        </div>                                              
+<!---Add Images to Your Website End --->                                                  
+
+                     
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+     <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</div>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
