@@ -1,3 +1,3 @@
 # New Era
 
-(Live)[https://thehackcbs.herokuapp.com/]
+[Live](https://thehackcbs.herokuapp.com/)
