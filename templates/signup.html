@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/particle_back.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
-	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
@@ -19,12 +20,22 @@
 <body>
 	<div class="form-structor" >
 		<div class="signup">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                  <script>
+                    var messages = {{ messages | safe }};
+                    //alert function
+                    swal("Opsss!", messages[0], "warning");
+                  </script>
+                {% endif %}
+              {% endwith %}
 			<h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
 			<form action="/signup" method="post">
 				<div class="form-holder">
 					<!-- <input type="text" class="input" placeholder="Name" /> -->
 					<input type="email" name="email" class="input" placeholder="Email" />
-					<input type="password" name="password" class="input" placeholder="Password" />
+                    <input type="password" name="password" class="input" placeholder="Password" />
+                    <input type="password" name="c_password" class="input" placeholder="Confirm Password" />
 				</div>
                 <button class="submit-btn">Sign up</button>
                 <p class="text-center text-white">Already have an account log in <a href="/login">here</a>.</p>

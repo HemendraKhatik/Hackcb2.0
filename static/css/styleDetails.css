@@ -123,11 +123,15 @@
 .box-part{
     background:#FFF;
     border-radius: .8%;
-    padding:60px 10px;
-    margin:10px 0px;
+    padding-top:50px;
+    padding-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:10px 50px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
-    width: 160vh;
+    width: auto;
     margin-top: 10px;
-    height: 650px;
+    height: 620px;
+    font-family: 'Roboto', sans-serif;
     
 }

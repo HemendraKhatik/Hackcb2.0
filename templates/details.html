@@ -13,10 +13,9 @@
     .bg{
         background-color: #35424a;
       }
-      
- </style>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styleDetails.css') }}">
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleDetails.css') }}">
 
   </head>
   <body>
@@ -25,7 +24,7 @@
           <!-- Image and text -->
           <nav class="navbar navbar-light bg sticky-top">
             <a class="navbar-brand" href="file:///C:/Users/User/Desktop/HackCBS%202.O/index.html">
-              <img src="{{ url_for('static', filename='images/logo.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+         <h2 style="color: #fff; font-family: sans-serif;">NewEra</h2>
 
             </a>
           </nav>
@@ -62,10 +61,6 @@
                 <div class="row">
                     <div class="col-lg-12">
                       <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Topics</a>
-                
-                                              
-
-
 <!---What is html start --->                                        
                        <div class="box-part" id="1">
                           <h3>What is HTML?</h3>
@@ -95,10 +90,6 @@
 </div>
 <!---What is html End --->                                   
 
-    
-
-
-
 <!---Hello to HTML Elements start --->                                        
                        <div class="box-part" id="2">
                           <h3>Hello to HTML Elements</h3>
@@ -115,9 +106,13 @@
                         </p>
                         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 <!---Codepen end -->
-      <button type="button" class="btn" style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" >Take Quiz</button>
+<!---first quiz start --->
+    <div class="center"><button style="color:#fff; float: right; margin-top:30px; margin-right: 30px;background-color: #17A2BB;" data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Teck Quiz</button></div>
 
-        </div>
+
+
+
+                        </div>
 <!--Hello to HTML Elements End --->                                                  
 
 <!---Headline with h elements start --->                                        

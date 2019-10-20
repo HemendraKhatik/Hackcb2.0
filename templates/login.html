@@ -10,15 +10,22 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
 	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
 </head>
 <body>
 	<div class="form-structor" >
 		<div class="signup">
+				{% with messages = get_flashed_messages() %}
+				{% if messages %}
+				  <script>
+					var messages = {{ messages | safe }};
+					//alert function
+					swal("Opsss!", messages[0], "warning");
+				  </script>
+				{% endif %}
+			  {% endwith %}
 			<h2 class="form-title" id="signup"><span>or</span>Log In</h2>
 			<form action="/login" method="post">
 				<div class="form-holder">
@@ -27,7 +34,7 @@
 					<input type="password" name="password" class="input" placeholder="Password" />
 				</div>
 				<button class="submit-btn">Log In</button>
-				<p class="text-center text-white">Don't have an account create <a href="/signup">here</a>.</p>
+				<p class="text-white">Don't have an account create <a href="/signup">here</a></p>
 			</form>
 		</div>
 	</div>
